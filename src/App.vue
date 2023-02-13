@@ -1,8 +1,14 @@
-<script setup>
+<script>
 import axios from 'axios'
 import AppHeader from './components/AppHeader.vue'
 import AppMain from './components/AppMain.vue'
 import AppFooter from './components/AppFooter.vue'
+
+export default {
+    components: {
+      AppHeader
+    }
+}
 </script>
 
 <template>
@@ -11,6 +17,6 @@ import AppFooter from './components/AppFooter.vue'
   <AppFooter></AppFooter>
 </template>
 
-<style scoped>
-
+<style lang="scss" scoped>
+ @use './assets/scss/general.scss' as *;
 </style>
