@@ -43,10 +43,18 @@ a{
 	color: #82868B;
 }
 
-h4, h2, button {
+.font-md {
+	font-size: 1.15rem;
+}
+
+h2, h4, h5, button {
 	color: #FFFFFF;
 	
 	font-weight: 700;
+}
+
+p {
+	line-height: 24px;
 }
 
 /* CLASSI */
@@ -66,8 +74,16 @@ h4, h2, button {
 	text-align: right;
 }
 
+.list-column {
+	flex-direction: column;
+}
+
 .border-secondary{
 	border: $border-blue-grey;
+}
+
+.color-white{
+	color: #FFFFFF;
 }
 
 .color-green{
