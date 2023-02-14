@@ -2,16 +2,12 @@
 import { store } from '../store'
 
 export default {
+		props:{
+			arraynav: Array
+		},
 		data(){
 			return{
-                store,
-				socialIcons: [
-				"fa-brands fa-facebook-f",
-				"fa-brands fa-twitter",
-				"fa-brands fa-linkedin-in",
-				"fa-brands fa-instagram",
-				"fa-brands fa-google-plus-g",
-				]
+				store,
 			}
 		}       
 	}
@@ -25,16 +21,21 @@ export default {
                 <!-- Parte Sinistra -->
 				<div class="col-left ">
 					<div class="my-row-between">
-						<div>
+						<div class="pe-3">
 							<i class="fa-regular fa-envelope me-1"></i>
 							<span>Superhit Top Movie </span>
-							<p class="color-green">** King Star **</p>
+							<p class="color-green"><strong>** King Star **</strong></p>
 						</div>
                         <!-- Icone Social -->
 						<ul>
-							<li v-for="(item,index) in socialIcons" :key="index">
+							<li v-for="(item,index) in store.socialIcons" :key="index">
 								<a href="#">
 									<i :class="item"></i>
+								</a>
+							</li>
+                            <li>
+								<a href="#">
+									<i class="fa-brands fa-google-plus-g"></i>
 								</a>
 							</li>
 						</ul> 
@@ -70,10 +71,10 @@ export default {
 			<div class="my-row-between align-items-center">
                 <!-- Menu -->
 				<ul>
-					<li v-for="(item,index) in store.menu" :key="index">
+					<li v-for="(item,index) in arraynav" :key="index">
 						<a href="#">
 							<h4>
-								{{ item.name }}
+								{{ item.title            }}
 								<!-- Se l'item ha un dropdwon al suo interno si visualizza l'arrow sown  -->
 								<i v-if="item.dropdownList" class="fa-solid fa-caret-down"></i>
 							</h4>
@@ -90,7 +91,7 @@ export default {
 	</header>
 </template>
 
-<style lang="scss" scoped>
+<style lang="scss">
 @use '../assets/scss/general.scss' as *;
 @use '../assets/scss/variables' as *;
 header{
@@ -145,7 +146,7 @@ header{
         border-bottom: $border-blue-grey;
         .my-row-between{
             input{
-                width: 255px;
+                width: 250px;
 
                 caret-color: $my-green;
                 background-color: $my-black;
