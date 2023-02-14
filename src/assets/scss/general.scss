@@ -11,56 +11,69 @@
 
 /* REGOLE GENERALI */
 body{
-    font-family: 'Roboto';
-
     font-size: 14px;
     
     color: #FFFFFF;
 }
-.border-grey {
-	border: $border-grey
+
+header, main, footer{
+	font-family: 'Roboto', sans-serif;
+
+	background-color: $my-black;
 }
 
-.debug {
-	border: 1px solid lightcoral;
-}
-
-.color-green {
-	color: $green;
-}
-
-hr {
-	margin: 0;
-}
-
-ul {
+ul{
     @include flex-between;
 
     margin: 0;
 
+	padding: 0;
+
 	list-style-type: none;
 }
 
-a {
+a{
+	color: #FFFFFF;
+	
 	text-decoration: none;
 }
 
-header, main, footer {
-	background-color: $blue-grey;
+/* TESTI */
+.text-grey{
+	color: #82868B;
 }
 
-.my-container {
+h4, h2, button {
+	color: #FFFFFF;
+	
+	font-weight: 700;
+}
+
+/* CLASSI */
+.my-container{
 	width: 77%;
 
 	margin: 0 auto;
 }
 
-.my-row-between {
+.my-row-between{
 	@include flex-between;
 
 	width: 100%;
 }
 
-.col-right {
+.col-right{
 	text-align: right;
+}
+
+.border-secondary{
+	border: $border-blue-grey;
+}
+
+.color-green{
+	color: $my-green;
+}
+
+.debug{
+	border: 1px solid lightcoral;
 }
