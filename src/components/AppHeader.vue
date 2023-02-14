@@ -60,7 +60,7 @@ export default {
 					</div>
 					<!-- Barra di Ricerca -->
 					<div id="searchbar" class="mt-4">
-						<input type="text" class="border-secondary p-3 bg-mydark" placeholder="Search ...">
+						<input type="text" class="border-secondary p-3 bg-my-black" placeholder="Search ...">
 						<button class="py-3 px-4" id="search">Search</button>
 					</div>
 				</div>
@@ -82,7 +82,7 @@ export default {
 						</a>
 						<!-- Dropdown -->
                         <!-- Se la proprietà 'dropdown' dell'item risulta vera si visualizza il menu -->
-						<div v-if="item.dropdown" class="dropdown dropdown-menu bg-mydark p-3">
+						<div v-if="item.dropdown" class="dropdown dropdown-menu bg-my-black p-3">
 							<ul class="list-column my-3">
 								<!-- Ciclo che scorre i dropdown-item nell'array della proprietà 'dropdownList' presente negli item del menu -->
 								<li v-for="(link,index) in item.dropdownList" :key="index">

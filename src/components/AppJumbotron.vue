@@ -52,12 +52,15 @@
 </template>
 
 <style lang="scss">
+@use '../assets/scss/variables' as *;
 @use '../assets/scss/general.scss' as *;
 #jumbotron{
-    height: 93vh;
     position: relative;
+
+    height: 93vh;
     img{
         object-fit: cover;
+        
         cursor: pointer;
     }
     &:hover{
@@ -87,6 +90,8 @@
             right: 2rem;
         }
         i{
+            color: $my-green;
+            
             font-size: 2rem;
             line-height: 3rem;
         }

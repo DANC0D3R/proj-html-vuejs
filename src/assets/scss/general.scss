@@ -15,11 +15,11 @@
 }
 
 /* REGOLE GENERALI */
-header, main, footer, .bg-mydark {
-	background-color: $dark;
+header, main, footer, .bg-my-black{
+	background-color: $my-black;
 }
 
-ul {
+ul{
 	@include flex-between;
 	
 	margin: 0;
@@ -40,15 +40,15 @@ a{
 	color: #82868B;
 }
 
-.font-md {
+.font-md{
 	font-size: 15px;
 }
 
-h2, h4, h5, button {
+h2, h4, h5, button{
 	font-weight: 700;
 }
 
-p {
+p{
 	line-height: 24px;
 }
 
@@ -69,19 +69,19 @@ p {
 	text-align: right;
 }
 
-.list-column {
+.list-column{
 	flex-direction: column;
 }
 
-.dropdown-menu {
+.dropdown-menu{
 	min-width: 200px;
 }
 
-.green-dot, .rounded-pill {
+.green-dot, .rounded-pill{
 	background-color: $my-green;
 }
 
-.rounded-pill {
+.rounded-pill{
 	border: none;
 }
 

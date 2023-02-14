@@ -1,14 +1,18 @@
 <script>
 import AppJumbotron from './AppJumbotron.vue'
+import AppNewMovieCarosell from './AppNewMovieCarosell.vue'
+
 export default {
     components:{
-        AppJumbotron
+        AppJumbotron,
+        AppNewMovieCarosell,
     }
 }
 </script>
 
 <template>
 	<AppJumbotron />
+    <AppNewMovieCarosell />
 </template>
 
 <style lang="scss">
