@@ -20,7 +20,7 @@ export default {
 			<div id="layover" class="w-100 h-100">
                 <div class="my-container">
 					<div class="my-row-between">
-						<div class="col-3">
+						<div class="col-3 pe-4">
 							<div class="title">	
 								<h5>About Us</h5>
 							</div>
@@ -35,13 +35,41 @@ export default {
 								</li>
 							</ul>
 						</div>
-						<div class="col-3">
+						<div class="col-3 px-3">
 							<div class="title">	
 								<h5>{{ objectCategories.title }}</h5>
 							</div>
-							<ul class="list-column">
+                            <ul class="list-column">
 								<li v-for="(item,index) in objectCategories.list" :key="index">
 									<a href="#" class="font-md">{{ item }}</a>
+								</li>
+							</ul>
+                        </div>
+                        <div class="col-3 px-3">
+							<div class="title">	
+								<h5>{{ objectInformation.title }}</h5>
+							</div>
+							<ul class="list-column">
+								<!-- ciclo gli item nella lista presente in objectInformation -->
+								<li v-for="(item,index) in objectInformation.list" :key="index">
+									<a href="#" class="font-md">{{ item }}</a>
+								</li>
+							</ul>
+						</div>
+						<div class="col-3 ps-4">
+							<div class="title">	
+								<h5>Recent Posts</h5>
+							</div>
+							<ul class="list-column">
+								<!-- ciclo i primi 3 oggetti dell'array 'posts' presente nel file 'store' -->
+								<li v-for="(item,index) in store.posts.slice(0,3)" :key="index">
+									<div class="my-row-between">
+										<img :src="item.image" :alt="item.title">
+										<div class="info pt-1 ps-3">
+											<a href="#" class="mb-1">{{ item.title }}</a>
+											<span>{{ item.date }}</span>
+										</div>
+									</div>
 								</li>
 							</ul>
 						</div>
@@ -76,7 +104,10 @@ footer{
         background-size: cover;
         #layover{
             background-color: $blue-grey;
+            background-position: center;
 
+			padding: 70px 0;
+            
             opacity: .92;
             .title{
                 position: relative;
@@ -97,7 +128,7 @@ footer{
             }
             ul.list-column{
                 li{
-                    margin-bottom: 2rem;
+                    margin-bottom: 1.75rem;
                 }
             }
             #social-dots{
@@ -127,13 +158,24 @@ footer{
                     }
                 }
             }
+            img{
+                height: 80px;
+                width: 86px;
+				}
+            .info{
+                a{
+                    font-weight: 500;
+                    line-height: 26px;
+                    display: block;
+                }
+            }
         }
     }
     #last-container{
         .my-row-between{
             align-items: center;
 
-            height: 4rem;
+            height: 4.25rem;
             ul{
                 li{
                     padding-right: 1.5rem;

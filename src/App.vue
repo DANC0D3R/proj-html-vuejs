@@ -98,12 +98,14 @@ export default {
 </script>
 
 <template>
+	<!-- Passa l'array della navbar come prop all'header  -->
 	<AppHeader :arraynav="navbar"></AppHeader>
 	<AppMain></AppMain>
+	<!-- Passa gli oggetti 'categories' e 'information' come props al footer  -->
 	<AppFooter :objectCategories="categories" :objectInformation="information"></AppFooter>
 </template>
 
 <style lang="scss" scoped>
 @use './assets/scss/general.scss' as *;
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
 </style>
