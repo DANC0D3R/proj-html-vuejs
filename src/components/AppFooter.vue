@@ -97,94 +97,93 @@ export default {
 <style lang="scss">
 @use '../assets/scss/general.scss' as *;
 @use '../assets/scss/variables' as *;
+
 footer{
-    color: #FFFFFF;
-    #background{
-        background-image: url('../assets/img/ft-bg.jpg');
-        background-size: cover;
-        #layover{
-            background-color: $blue-grey;
-            background-position: center;
+	#background{
+		background-image: url('../assets/img/ft-bg.jpg');
+		background-size: cover;
+		#layover{
+			background-color: $blue-grey;
+			background-position: center;
 
 			padding: 70px 0;
-            
-            opacity: .92;
-            .title{
-                position: relative;
 
-                margin-bottom: 2.25rem;
-                h5::after{
-                    content: "";
+			opacity: .92;
+			.title{
+				position: relative;
 
-                    position: absolute;
-                    left: 0;
-                    bottom: -5px;
+				margin-bottom: 2.25rem;
+				h5::after{
+					content: "";
 
-                    width: 33px;
-                    height: 2px;
+					position: absolute;
+					left: 0;
+					bottom: -5px;
 
-                    background: #FFFFFF;
-                }
-            }
-            ul.list-column{
-                li{
-                    margin-bottom: 1.75rem;
-                }
-            }
-            #social-dots{
-                width: 80%;
-                a{
-                    text-align: center;
-                    line-height: 2.5rem;
+					width: 33px;
+					height: 2px;
 
-                    width: 2.5rem;
-                    height: 2.5rem;
-
-                    border-radius: 50%;
-                    &.fa-facebook-f{
-                        background-color: $facebook;
-                    }
-                    &.fa-twitter{
-                        background-color: $twitter;
-                    }
-                    &.fa-linkedin-in{
-                        background-color: $linkedin;
-                    }
-                    &.fa-instagram{
-                        background-color: #C22D29;
-                    }
-                    &.fa-pinterest{
-                        background-color: #AF0B1B;
-                    }
-                }
-            }
-            img{
-                height: 80px;
-                width: 86px;
+					background: #FFFFFF;
 				}
-            .info{
-                a{
-                    font-weight: 500;
-                    line-height: 26px;
-                    display: block;
-                }
-            }
-        }
-    }
-    #last-container{
-        .my-row-between{
-            align-items: center;
+			}
+			ul.list-column{
+				li{
+					margin-bottom: 1.75rem;
+				}
+			}
+			#social-dots{
+				width: 80%;
+				a{
+					text-align: center;
+					line-height: 2.5rem;
 
-            height: 4.25rem;
-            ul{
-                li{
-                    padding-right: 1.5rem;
-                }
-            }
-            a, .col-right{
-                font-size: 1.15rem;
-            }
-        }
-    }
+					width: 2.5rem;
+					height: 2.5rem;
+
+					border-radius: 50%;
+					&.fa-facebook-f{
+						background-color: $facebook;
+					}
+					&.fa-twitter{
+						background-color: $twitter;
+					}
+					&.fa-linkedin-in{
+						background-color: $linkedin;
+					}
+					&.fa-instagram{
+						background-color: #C22D29;
+					}
+					&.fa-pinterest{
+						background-color: #AF0B1B;
+					}
+				}
+			}
+			img{
+				width: 86px;
+				height: 80px;
+			}
+			.info{
+				a{
+					display: block;
+					line-height: 26px;
+
+					font-weight: 500;
+				}
+			}
+		}
+	}
+
+	#last-container{
+		.my-row-between{
+			align-items: center;
+
+			height: 4.25rem;
+			ul{
+				li{
+					padding-right: 1.5rem;;
+				}
+			}
+		}
+	}
 }
 </style>

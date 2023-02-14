@@ -16,55 +16,57 @@ export default {
 			navbar: [
 				{
 					title: 'Home',
-					type: 'Dropdwon',
+					dropdown: true,
 					dropdownList: [
-						'Home',
-						'Home 2',
-						'Home 3',
-						'Home 4',
-						'Home 5',
-						'Home 6',
+						{ label: 'Home'},
+						{ label: 'Home 2'},
+						{ label: 'Home 3'},
+						{ label: 'Home 4'},
+						{ label: 'Home 5'},
+						{ label: 'Home 6'},
 					]
 				},
 				{
 					title: 'Celebrity',
-					type: 'Dropdwon',
+					dropdown: true,
 					dropdownList: [
-						'Celebrity',
-						'Celebrity',
+						{ label: 'Celebrity'},
+						{ label: 'Celebrity 2'},
 					]
 				},
 				{
 					title: 'Movie',
-					type: 'Dropdwon',
+					dropdown: true,
 					dropdownList: [
-						'Single Movie',
-						'Top Rate Movie',
-						'Movie Category',
+						{ label: 'Single Movie'},
+						{ label: 'Top Rate Movie'},
+						{ label: 'Movie Category'},
 					]
 				},
 				{
 					title: 'Page',
-					type: 'Dropdwon',
+					dropdown: true,
 					dropdownList: [
-						'My Account',
+						{ label: 'My Account'},
 					]
 				},
 				{
 					title: 'Shop',
 					type: 'Dropdwon',
 					dropdownList: [
-						'Pricing Table',
-						'Cart',
-						'Wishlist',
+						{ label: 'Pricing Table'},
+						{ label: 'Cart'},
+						{ label: 'Wishlist'},
 					]
 				},
 				{
 					title: 'Blog',
+					dropdown: false,
 					type: 'link'
 				},
 				{
 					title: 'Contact Us',
+					dropdown: false,
 					type: 'link'
 				}
 			],
