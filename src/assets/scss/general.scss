@@ -77,6 +77,14 @@ p {
 	min-width: 200px;
 }
 
+.green-dot, .rounded-pill {
+	background-color: $my-green;
+}
+
+.rounded-pill {
+	border: none;
+}
+
 .border-secondary{
 	border: $border-blue-grey;
 }

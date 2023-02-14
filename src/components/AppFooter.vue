@@ -2,16 +2,16 @@
 import { store } from '../store'
 
 export default {
-		props:{
-			objectCategories: Object,
-			objectInformation: Object,
-		},
-		data(){
-			return{
-				store
-			}
+	props:{
+		objectCategories: Object,
+		objectInformation: Object,
+	},
+	data(){
+		return{
+			store
 		}
 	}
+}
 </script>
 
 <template>

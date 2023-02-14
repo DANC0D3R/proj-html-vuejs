@@ -1,15 +1,15 @@
 <script>
-	import { store } from '../store'
-	export default {
-		props:{
-			arraynav: Array
-		},
-		data(){
-			return{
-				store
-			}
-		}       
-	}
+import { store } from '../store'
+export default {
+    props:{
+        arraynav: Array
+    },
+    data(){
+        return{
+            store
+        }
+    }       
+}
 </script>
 
 <template>
@@ -157,8 +157,6 @@ header{
             input{
                 width: 250px;
 
-                border-left: none;
-
                 caret-color: $my-green;
 
                 outline: none;
@@ -237,8 +235,6 @@ header{
                 font-size: .75rem;
 
                 border-radius: 50%;
-
-                background-color: $my-green;
             }
             &:hover{
                 .dropdown-menu{

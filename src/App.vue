@@ -109,5 +109,5 @@ export default {
 
 <style lang="scss" scoped>
 @use './assets/scss/general.scss' as *;
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
 </style>
