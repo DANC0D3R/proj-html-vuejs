@@ -148,7 +148,6 @@ header{
             }
         }		
     }
-
     section{
         margin-bottom: 0;
         
@@ -222,6 +221,7 @@ header{
         }
         #cart{
             position: relative;
+            cursor: pointer;
             .green-dot{
                 position: absolute;
                 top: -12px;

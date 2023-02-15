@@ -12,6 +12,8 @@
 	font-size: 14px;
 
 	color: #FFFFFF;
+
+	transition: all 0.4s ease-in-out;
 }
 
 /* REGOLE GENERALI */
@@ -19,12 +21,12 @@ body{
 	background-color: $my-black;
 }
 .bg-my-black{
-	background-color: $my-black;
+	background-color: $blue-grey;
 }
 section{
 	margin-bottom: 6rem;
 }
-.section-header {
+.section-header{
 	margin-bottom: 4rem;
 	
 	padding-left: 1rem;
@@ -70,6 +72,8 @@ p{
 /* CARDS */
 .my-card{
 	position: relative;
+
+	overflow: hidden;
 }
 
 .my-card > div{
@@ -92,6 +96,8 @@ p{
 
 .label{
 	padding: .75rem 1.2rem;
+
+	cursor: pointer;
 }
 
 .left-label{
@@ -161,4 +167,61 @@ p{
 
 .debug{
 	border: 1px solid lightcoral;
+}
+
+/* EFFETTI HOVER */
+.my-card:hover::after{
+	background-color: rgba($my-green, 0.25);
+	background: linear-gradient(180deg, rgba($my-green, 0.5) 5%, rgba($blue-grey, 0.9) 90%);
+}
+
+a:hover, i:hover{
+	color: $my-green !important;
+	& *{
+		color: $my-green !important;
+	}
+}
+
+.white-hover:hover{
+	color: #000000;
+	background-color: #FFFFFF;
+}
+
+.bottom-label:hover{
+	background-color: $my-green;
+}
+
+#social-dots{
+	a:hover{
+		background-color: $blue-grey !important;
+	}
+}
+
+.my-card:hover img{
+	transform: scale(1.25);
+}
+
+#movie-cards{
+	.movie-category{
+		position: relative;
+
+		&:after {
+			content: "";
+
+			position: absolute;
+			bottom: -2px;
+			left: 0;
+
+			width: 0px;
+			height: 1px;
+			
+			background: $my-green;
+
+			transition: width 0.4s ease-in-out;
+		}
+
+		&:hover:after {
+			width: 100%;
+		}
+	}
 }

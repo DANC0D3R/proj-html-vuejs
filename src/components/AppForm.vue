@@ -1,6 +1,6 @@
 <script>
 	export default {
-		
+		name: 'AppForm'
 	}
 </script>
 
@@ -10,7 +10,7 @@
 			<input class="rounded-pill bg-mygreen" type="text" placeholder="First Name" name="FirstName">
 			<input class="mx-4 rounded-pill bg-mygreen" type="text" placeholder="Last Name" name="LastName"> 
 			<input class="rounded-pill bg-mygreen" type="email" placeholder="Email Address" name="Email"> <br>
-			<input id="send" class="rounded-pill bg-mydark text-center d-block mx-auto" type="send" placeholder="Subscribe"> 
+			<input id="send" class="rounded-pill text-center d-block mx-auto" type="send" placeholder="Subscribe"> 
 		</div>
 	</div>
 </template>
@@ -52,9 +52,18 @@
         }
         input#send{
             width: 12.5%;
+            background-color: $blue-grey;
             cursor: pointer;
             &::placeholder{
                 font-weight: 700;
+            }
+            &:hover{
+                background-color: #FFFFFF;
+
+                transition: all 0.5s ease-in;
+            }
+            &:hover::placeholder{
+                color: #000000;
             }
         }
     }

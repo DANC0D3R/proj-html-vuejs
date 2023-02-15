@@ -24,7 +24,7 @@ export default {
 				</div>
 				<nav class="w-50">
 					<ul>
-						<li v-for="(item,index) in store.mediaCategories" :key="index">
+						<li v-for="(item,index) in store.mediaCategories" :key="index" class="movie-category">
 							<a href="#">{{ item.name }}</a>
 						</li>
 					</ul>
@@ -49,7 +49,7 @@ section{
     nav{
         margin-bottom: 75px;
         ul{
-            li{
+            li.movie-category{
                 a{
                     font-size: 18px;
                 }
