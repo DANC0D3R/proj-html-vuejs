@@ -8,6 +8,7 @@ export default {
     },
     data(){
         return{
+            categorySelected: '',
             store,
         }
     }
@@ -24,12 +25,13 @@ export default {
 				</div>
 				<nav class="w-50">
 					<ul>
-						<li v-for="(item,index) in store.mediaCategories" :key="index" class="movie-category">
-							<a href="#">{{ item.name }}</a>
+						<li v-for="(item,index) in store.mediaCategories" :key="index" class="movie-category" @click="categorySelected=item.name">
+							<a href="#movie-cards">{{ item.name }}</a>
 						</li>
 					</ul>
 				</nav>
-                <AppCardMovieList/>
+                <!-- Passa la prop della categoria selezionata alla lista movie -->
+                <AppCardMovieList :category-selected="categorySelected"/>
 			</div>
 		</section>
 </template>
@@ -52,6 +54,8 @@ section{
             li.movie-category{
                 a{
                     font-size: 18px;
+                    
+                    cursor: pointer;
                 }
             }
         }

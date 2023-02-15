@@ -1,9 +1,23 @@
 <script>
 import AppCardMovie from './AppCardMovie.vue'
 export default {
+    props:{
+        categorySelected: String
+    },
     components:{
         AppCardMovie,
     },
+    computed:{
+        // Filtra l'array in base alla categoria selezionata 
+        availableMovies(){
+            // Se non è vera la categoria o se è uguale a 'All', restituisce l'array di partenza
+            if(!this.categorySelected || this.categorySelected === 'All'){
+                return this.movieCardsArray
+            }
+            // Altrimenti filtra l'array solo con gli oggetti che hanno come categoria quella selezionata 
+            return this.movieCardsArray.filter(item => item.category === this.categorySelected)
+        }
+	},
     data(){
         return{
             movieCardsArray: [
@@ -75,13 +89,12 @@ export default {
 
 <template>
 	<div class="my-row-between flex-wrap">
-		<!-- Ciclo che scorre gli oggetti dell'array movieCardsArray, passaggio dell'oggetto (card) come prop alla componente AppCardMovie  -->
-		<AppCardMovie v-for="(item,index) in movieCardsArray" :key="index" :card="item" />
+		<!-- Ciclo che scorre gli oggetti della funzione avaibleMovies, passaggio dell'oggetto (card) come prop alla componente AppCardMovie  -->
+		<AppCardMovie v-for="(item,index) in availableMovies" :key="index" :card="item" />
 	</div>
 </template>
 
 <style lang="scss">
 @use '../assets/scss/variables' as *;
 @use '../assets/scss/general.scss' as *;
-	
 </style>
