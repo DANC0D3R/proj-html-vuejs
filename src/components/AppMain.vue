@@ -4,6 +4,7 @@ import AppNewMovieCarosell from './AppNewMovieCarosell.vue'
 import AppMoviePlaylist from './AppMoviePlaylist.vue'
 import AppComingSoon from './AppComingSoon.vue'
 import AppNewMovieCards from './AppNewMovieCards.vue'
+import AppLatestNewsCards from './AppLatestNewsCards.vue'
 
 export default {
     components:{
@@ -12,6 +13,7 @@ export default {
         AppMoviePlaylist,
         AppComingSoon,
         AppNewMovieCards,
+        AppLatestNewsCards,
     }
 }
 </script>
@@ -22,6 +24,7 @@ export default {
     <AppMoviePlaylist/>
     <AppComingSoon/>
     <AppNewMovieCards/>
+    <AppLatestNewsCards/>
 </template>
 
 <style lang="scss">

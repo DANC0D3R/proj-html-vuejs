@@ -1,6 +1,6 @@
 <script >
 import { store } from '../store';
-import  AppCardMovieList from './AppCardMovieList.vue'
+import AppCardMovieList from './AppCardMovieList.vue'
 
 export default {
     components:{
@@ -38,6 +38,14 @@ export default {
 @use '../assets/scss/variables' as *;
 @use '../assets/scss/general.scss' as *;
 section{
+    .section-header{
+        p{
+            margin-bottom: 0;
+
+            font-size: 16px;
+            font-weight: 300;
+        }
+    }
     nav{
         margin-bottom: 75px;
         ul{
