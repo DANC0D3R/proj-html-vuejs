@@ -150,6 +150,8 @@ header{
     }
 
     section{
+        margin-bottom: 0;
+        
         border-top: $border-blue-grey;
         border-bottom: $border-blue-grey;
         .my-row-between{

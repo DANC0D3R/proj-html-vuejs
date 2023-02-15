@@ -2,12 +2,14 @@
 import AppJumbotron from './AppJumbotron.vue'
 import AppNewMovieCarosell from './AppNewMovieCarosell.vue'
 import AppMoviePlaylist from './AppMoviePlaylist.vue'
+import AppComingSoon from './AppComingSoon.vue'
 
 export default {
     components:{
         AppJumbotron,
         AppNewMovieCarosell,
         AppMoviePlaylist,
+        AppComingSoon,
     }
 }
 </script>
@@ -16,6 +18,7 @@ export default {
 	<AppJumbotron/>
     <AppNewMovieCarosell/>
     <AppMoviePlaylist/>
+    <AppComingSoon/>
 </template>
 
 <style lang="scss">

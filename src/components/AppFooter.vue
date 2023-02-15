@@ -100,6 +100,8 @@ export default {
 
 footer{
 	#background{
+		margin: 0;
+		
 		background-image: url('../assets/img/ft-bg.jpg');
 		background-size: cover;
 		#layover{

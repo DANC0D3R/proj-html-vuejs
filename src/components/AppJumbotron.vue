@@ -32,7 +32,7 @@
 </script>
 
 <template>
-	<div id="jumbotron">
+	<section id="jumbotron">
 		<img :src="sliderImg" alt="slider-image" class="img-fluid h-100">
         <!-- Al click sull'arrow cambia l'immagine -->
 		<div class="arrow-slider left rounded-circle" @click="changeImg()">
@@ -48,7 +48,7 @@
 			<p>Lorem Ipsum is simply dummy text of the printing and typesetting industrioy. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown</p>
 			<button class="rounded-pill">Read More</button>
 		</div>
-	</div>
+	</section>
 </template>
 
 <style lang="scss">
