@@ -16,8 +16,8 @@
 </template>
 
 <style lang="scss">
-@use '../assets/scss/variables' as *;
-@use '../assets/scss/general.scss' as *;
+@use '../../assets/scss/variables' as *;
+@use '../../assets/scss/general.scss' as *;
 #form{
     position: relative;
     bottom: 50px;
@@ -26,7 +26,7 @@
 
     margin-top: 150px;
 
-    background-image: url('../assets/img/form-bg-1.png');
+    background-image: url('../../assets/img/form-bg-1.png');
     background-repeat: no-repeat;
     background-size: cover; 
     .form-group{

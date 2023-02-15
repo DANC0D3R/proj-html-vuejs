@@ -1,7 +1,7 @@
 <script>
-import { store } from '../store';
-import AppCardBigNews from './AppCardBigNews.vue';
-import AppCardNews from './AppCardNews.vue';
+import { store } from '../../../store';
+import AppCardBigNews from './AppCardNewList-components/AppCardBigNews.vue';
+import AppCardNews from './AppCardNewList-components/AppCardNews.vue';
 
 export default {
     components:{
@@ -31,8 +31,8 @@ export default {
 </template>
 
 <style lang="scss">
-@use '../assets/scss/variables' as *;
-@use '../assets/scss/general.scss' as *;
+@use '../../../assets/scss/variables' as *;
+@use '../../../assets/scss/general.scss' as *;
 #big-news, #grid{
     width: calc(100% / 2 - 1.2rem);
 }

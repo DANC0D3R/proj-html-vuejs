@@ -1,4 +1,4 @@
-<script >
+<script>
 export default{
     data(){
         return{
@@ -44,7 +44,7 @@ export default{
             return arr; 
         },
         getImagePath(imgPath) {
-            return new URL(`../assets/img/${imgPath}`, import.meta.url).href;
+            return new URL(`../../assets/img/${imgPath}`, import.meta.url).href;
         }
 
     }
@@ -97,7 +97,7 @@ export default{
 </template>
 
 <style lang="scss" scoped>
-@use '../assets/scss/variables' as *;
+@use '../../assets/scss/variables' as *;
 
 section{
     .arrow-slider{

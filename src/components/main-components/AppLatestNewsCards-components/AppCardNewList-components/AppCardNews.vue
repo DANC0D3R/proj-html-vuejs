@@ -22,8 +22,8 @@
 </template>
 
 <style lang="scss">
-@use '../assets/scss/variables' as *;
-@use '../assets/scss/general.scss' as *;
+@use '../../../../assets/scss/variables' as *;
+@use '../../../../assets/scss/general.scss' as *;
 .card-news{
     width: calc(100% / 2 - 1.2rem);
     height: calc(100% / 2 - 1.2rem);

@@ -31,8 +31,8 @@ export default {
 </template>
 
 <style lang="scss">
-@use '../assets/scss/variables' as *;
-@use '../assets/scss/general.scss' as *;
+@use '../../../assets/scss/variables' as *;
+@use '../../../assets/scss/general.scss' as *;
 .movie-card{
 	width: calc(100% / 3 - 1.5rem);
 	margin-bottom: 2.25rem;

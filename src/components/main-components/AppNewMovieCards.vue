@@ -1,6 +1,6 @@
 <script >
-import { store } from '../store';
-import AppCardMovieList from './AppCardMovieList.vue'
+import { store } from '../../store';
+import AppCardMovieList from './AppNewMovieCards-components/AppCardMovieList.vue'
 
 export default {
     components:{
@@ -37,8 +37,8 @@ export default {
 </template>
 
 <style lang="scss" scoped>
-@use '../assets/scss/variables' as *;
-@use '../assets/scss/general.scss' as *;
+@use '../../assets/scss/variables' as *;
+@use '../../assets/scss/general.scss' as *;
 section{
     .section-header{
         p{

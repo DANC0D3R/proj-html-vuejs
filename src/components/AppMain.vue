@@ -1,11 +1,11 @@
 <script>
-import AppJumbotron from './AppJumbotron.vue'
-import AppNewMovieCarosell from './AppNewMovieCarosell.vue'
-import AppMoviePlaylist from './AppMoviePlaylist.vue'
-import AppComingSoon from './AppComingSoon.vue'
-import AppNewMovieCards from './AppNewMovieCards.vue'
-import AppLatestNewsCards from './AppLatestNewsCards.vue'
-import AppForm from './AppForm.vue';
+import AppJumbotron from './main-components/AppJumbotron.vue'
+import AppNewMovieCarosell from './main-components/AppNewMovieCarosell.vue'
+import AppMoviePlaylist from './main-components/AppMoviePlaylist.vue'
+import AppComingSoon from './main-components/AppComingSoon.vue'
+import AppNewMovieCards from './main-components/AppNewMovieCards.vue'
+import AppLatestNewsCards from './main-components/AppLatestNewsCards.vue'
+import AppForm from './main-components/AppForm.vue';
 
 export default {
     components:{
@@ -28,6 +28,7 @@ export default {
     <AppNewMovieCards/>
     <AppLatestNewsCards/>
     <AppForm/>
+    <!-- Bottone ritorno inizio pagina -->
     <div class="button-box">
         <button class="top-page">
         <a href="#"><i class="fa-brands fa-vuejs"></i></a>

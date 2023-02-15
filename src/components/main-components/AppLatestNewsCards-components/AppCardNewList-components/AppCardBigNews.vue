@@ -1,5 +1,5 @@
 <script>
-import { store } from '../store';
+import { store } from '../../../../store';
 
 export default {
         data(){
@@ -31,8 +31,8 @@ export default {
 </template>
 
 <style lang="scss">
-@use '../assets/scss/variables' as *;
-@use '../assets/scss/general.scss' as *;
+@use '../../../../assets/scss/variables' as *;
+@use '../../../../assets/scss/general.scss' as *;
 #big-card{
     .title{
         bottom: 70px;

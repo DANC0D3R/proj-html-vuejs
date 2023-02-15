@@ -20,14 +20,14 @@ export default{
 </template>
 
 <style lang="scss" scoped>
-@use '../assets/scss/variables' as *;
-@use '../assets/scss/general.scss' as *;
+@use '../../assets/scss/variables' as *;
+@use '../../assets/scss/general.scss' as *;
 section{
     position: relative;
 
     height: 80vh;
 
-    background-image: url('../assets/img/coming-bg.jpg');
+    background-image: url('../../assets/img/coming-bg.jpg');
     background-position: center;
     background-size: cover;
     #bg-layover{

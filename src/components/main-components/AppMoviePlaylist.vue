@@ -1,4 +1,4 @@
-<script >
+<script>
 export default{
     data(){
         return{
@@ -128,8 +128,8 @@ export default{
 </template>
 
 <style lang="scss" scoped>
-@use '../assets/scss/variables' as *;
-@use '../assets/scss/general.scss' as *;
+@use '../../assets/scss/variables' as *;
+@use '../../assets/scss/general.scss' as *;
 section{
     .section-header{
         p{

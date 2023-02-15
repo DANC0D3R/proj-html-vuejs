@@ -1,6 +1,6 @@
 <script >
-import { store } from '../store';
-import  AppCardNewList from './AppCardNewList.vue'
+import { store } from '../../store';
+import  AppCardNewList from './AppLatestNewsCards-components/AppCardNewList.vue'
 
 export default {
     components:{
@@ -28,8 +28,8 @@ export default {
 </template>
 
 <style lang="scss" scoped>
-@use '../assets/scss/variables' as *;
-@use '../assets/scss/general.scss' as *;
+@use '../../assets/scss/variables' as *;
+@use '../../assets/scss/general.scss' as *;
 .section-header{
     p{
         margin-bottom: 0;
