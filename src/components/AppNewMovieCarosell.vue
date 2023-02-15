@@ -55,7 +55,8 @@ export default{
     <section>
         <div class="my-container py-5">
             <div class="row">
-                <div class="col-11 mb-5 carousel-top-box section-header">
+                <!-- Titolo Sezione -->
+                <div class="col-11 mb-5 section-header">
                     <p class="m-0 text-white">
                         <h3>New Movie</h3>
                         <p class="m-0 text-white">Lorem Ipsum is simply dummy text of the printing and typesettin</p>
@@ -74,6 +75,7 @@ export default{
                         </div>
                     </p>
                 </div>
+                <!-- Ciclo che scorre gli oggetti movies dell'array movieList  -->
                 <div v-for="movie,index in movieList" class="col-4 p-0" :class="index == 1 ? `div_centrale mt-4` : ``">
                     <img :src=getImagePath(movie.img) alt="1">
                     <p class="text-white m-0">

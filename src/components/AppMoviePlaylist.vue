@@ -83,6 +83,7 @@ export default{
 <template>
     <section>
 			<div class="my-container">
+                <!-- Titolo Sezione -->
 				<div class="section-header">
 					<h3>Movie Playlist</h3>
 					<p>Lorem Ipsum is simply dummy text of the printing and typesettin</p>
@@ -100,7 +101,7 @@ export default{
 						</div>
 						<div id="movie-list-main" class="pb-5">
 							<ul class="list-column">
-								<!-- ciclo gli oggetti movies dell'array newMovies  -->
+								<!-- Ciclo che scorre gli oggetti movies dell'array newMovies  -->
 								<li v-for="(item,index) in newMovies" :key="index" class="mt-4">
 									<div class="my-row-between">
 										<div class="movie-cover img-fluid">
