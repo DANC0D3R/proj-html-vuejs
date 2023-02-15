@@ -53,11 +53,11 @@ export default{
 
 <template>
     <section>
-        <div class="container py-5">
+        <div class="my-container py-5">
             <div class="row">
-                <div class="col-11 mb-5 carousel-top-box">
-                    <p class="m-0 mb-3 text-white">
-                        <span class="fw-bold fs-5">New Movie</span>
+                <div class="col-11 mb-5 carousel-top-box section-header">
+                    <p class="m-0 text-white">
+                        <h3>New Movie</h3>
                         <p class="m-0 text-white">Lorem Ipsum is simply dummy text of the printing and typesettin</p>
                     </p>
                 </div>
@@ -98,11 +98,6 @@ export default{
 @use '../assets/scss/variables' as *;
 
 section{
-    background-color: $my-black;
-    .carousel-top-box{
-        border-left: 1px solid $my-green;
-        border-bottom: 1px solid $blue-grey;
-    }
     .arrow-slider{
         margin:  0px;
 

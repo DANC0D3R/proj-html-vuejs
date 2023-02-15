@@ -15,8 +15,23 @@
 }
 
 /* REGOLE GENERALI */
-header, main, footer, .bg-my-black{
+body{
 	background-color: $my-black;
+}
+.bg-my-black{
+	background-color: $my-black;
+}
+section{
+	margin: 3rem 0;
+}
+.section-header {
+	margin-bottom: 4rem;
+	
+	padding-left: 1rem;
+	padding-bottom: 0.75rem;
+
+	border-left: 2px solid $my-green;
+	border-bottom: $border-blue-grey;
 }
 
 ul{
@@ -44,7 +59,7 @@ a{
 	font-size: 15px;
 }
 
-h2, h4, h5, button{
+h2, h3, h4, h5, h6, button{
 	font-weight: 700;
 }
 
