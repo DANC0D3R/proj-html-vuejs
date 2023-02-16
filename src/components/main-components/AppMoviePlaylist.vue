@@ -81,7 +81,7 @@ export default{
 </script>
 
 <template>
-    <section>
+    <section id="movie-playlist">
 			<div class="my-container">
                 <!-- Titolo Sezione -->
 				<div class="section-header">
@@ -108,7 +108,7 @@ export default{
 											<img :src="pathBase + item.finalPath" :alt="item.title" class="img-fluid">
 										</div>
 										<div class="movie-info ps-3">
-											<a href="#">
+											<a href="movie-playlist">
                                                 <h5>{{ item.title }}</h5>
                                             </a>
 											<h6>{{ item.views }} views</h6>
